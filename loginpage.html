@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <script type="text/javascript">
+        function validate()
+        {
+            var pas=document.getElementById("pw").value;
+            var cpas=document.getElementById("cpw").value;
+            if(pas!=cpas)
+            {
+                alert("Passwords don't match");
+                document.getElementById("bt").disabled=true;
+                document.getElementById("cbx").checked=false;
+
+            }
+            else 
+            {
+                document.getElementById("bt").disabled=false;
+                return false;
+            }        
+        }
+        </script>
+        <style>
+            @import "https://pro.fontawesome.com/releases/v5.10.0/css/all.css";
+            body{
+                margin:0;
+                padding:0;
+                font-family:sans-serif;
+                background:url("https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg") ;
+                
+            }
+            .login-box{
+                width:250px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                color:white;
+            }
+            .login-box h1{
+                float:left;
+                font-size:40px;
+                border-bottom:6px solid maroon;
+                margin-bottom:30px;
+                padding:13px;
+                font-family:sans-serif; 
+                font-weight:700;
+            }
+            .textbox{
+                width:100%;
+                overflow:hidden;
+                font-size:30px;
+                padding:7px 0;
+                border-bottom:1px solid slategray;
+            }
+            .textbox i{
+                width:20px;
+                float:left;
+                text-align:center;
+            }
+            .textbox input{
+                border:none;
+                outline:none;
+                background:none;
+                color:white;
+                font-size:20px;
+                width:80%;
+                float:left;
+                margin:0 10px;
+            }
+            .btn{
+                width:100%;
+                background-color:maroon;
+                border:2px solid maroon;
+                color:white;
+                padding:5px;
+                font-size:16px;
+                cursor:pointer;
+                margin:12px 0;
+            }
+            .btn:hover{
+                opacity:0.8;
+            }
+            .check{
+                cursor:pointer;
+            }
+            @keyframes goleft{
+                from{left:20%;}
+                to{left:50%;}
+            }
+            div{
+                animation-name: goleft;
+                animation-duration:1.5s;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <form>
+            <div class="login-box" >
+                <h1>Create New</h1>
+                <div class="textbox">
+                    <i class="fad fa-user"></i>
+                    <input type="text" placeholder="Username" name="" value="" required>
+                </div>
+                <div class="textbox">
+                    <i class="fad fa-lock"></i>
+                    
+                    <input type="password" placeholder="Password" id="pw" name="" value="" required>
+                </div>
+                <div class="textbox">
+                    <i class="fad fa-lock"></i>
+                    <input type="password" placeholder="Confirm password" id="cpw" name="" value=""  required>
+                </div></br>
+                <div>
+                    <label>Agree to terms and conditions</label>
+                    <input class="check" type="checkbox" id="cbx" name="" onclick="validate();" required>
+                </div>
+                <a href="templateupdate.html"><input class="btn" id="bt" type="button" name="" onmouseover="validate();" value="Create" disabled></a>
+            </div>
+        </form> 
+    </body>
+</html>

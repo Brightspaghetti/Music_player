@@ -1,0 +1,55 @@
+@import "https://pro.fontawesome.com/releases/v5.10.0/css/all.css";
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background:url("https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg") ;
+    
+}
+.login-box{
+    width:250px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+}
+.login-box h1{
+    float:left;
+    font-size:40px;
+    border-bottom:6px solid maroon;
+    margin-bottom:30px;
+    padding:13px;
+}
+.textbox{
+    width:100%;
+    overflow:hidden;
+    font-size:30px;
+    padding:7px 0;
+    border-bottom:1px solid slategray;
+}
+.textbox i{
+    width:20px;
+    float:left;
+    text-align:center;
+}
+.textbox input{
+    border:none;
+    outline:none;
+    background:none;
+    color:white;
+    font-size:20px;
+    width:80%;
+    float:left;
+    margin:0 10px;
+}
+.btn{
+    width:100%;
+    background-color:maroon;
+    border:2px solid maroon;
+    color:white;
+    padding:5px;
+    font-size:16px;
+    cursor:pointer;
+    margin:12px 0;
+}
