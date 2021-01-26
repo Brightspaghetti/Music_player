@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" href="feedback.css" type="text/css" media="all" />
+</head>
+<body>
+<h2>Contact Us</h2>
+  
+  <form class="form" action="feedbackform.php" method="POST">
+    
+    <p class="username">
+        <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" >
+    </p>
+    
+    <p class="useremail">
+        <label for="email">Email</label>
+      <input type="text" name="email" id="email" placeholder="mail@example.com" >
+    </p>
+    
+    <p class="usercontact">
+        <label for="contact">Phone</label>
+      <input type="text" name="contact" id="contact" placeholder="contact no." >
+    </p>    
+  
+    <p class="usertext">
+    <label for="text">Comments:</label><br>
+      <textarea name="text" placeholder="Write something to us" ></textarea>
+    </p>
+    
+    <p class="usersubmit">
+      <input type="submit" name="submit" value="Send" >
+    </p>
+  </form>
+</body>
+</html>
