@@ -28,6 +28,10 @@
                 return false;
             }        
         }
+        function deactivate()
+        {
+            document.getElementById("cbx").checked=false;
+        }
         </script>
         <style>
             @import "https://pro.fontawesome.com/releases/v5.10.0/css/all.css";
@@ -115,11 +119,11 @@
                 <div class="textbox">
                     <i class="fad fa-lock"></i>
                     
-                    <input type="password" placeholder="Password" id="pw" name="" value="" required>
+                    <input type="password" placeholder="Password" id="pw" name="" value="" onkeypress="deactivate();" required>
                 </div>
                 <div class="textbox">
                     <i class="fad fa-lock"></i>
-                    <input type="password" placeholder="Confirm password" id="cpw" name="" value=""  required>
+                    <input type="password" placeholder="Confirm password" id="cpw" name="" value="" onkeypress="deactivate();"  required>
                 </div></br>
                 <div>
                     <label>Agree to terms and conditions</label>
