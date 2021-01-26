@@ -1,0 +1,69 @@
+body {
+  padding: 50px 500px;
+  font-size: 13px;
+        background:url("https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg") ;
+        min-height:100%;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        color:white;
+    
+}
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+    color: maroon;
+    text-decoration:maroon;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #E5E5E5;
+  width: 300px;
+  color: #999999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+      
+}
+textarea {
+  width: 500px;
+  height: 150px;
+  max-width: 400px;
+  line-height: 18px;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  border-color: 1px solid #C9C9C9;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;  
+}
+.form label {
+  margin-left: 10px;
+  font-family:monospace;
+    font-size: 15px;
+}
+.usersubmit input {
+  align-items: center;
+  width: 100px; 
+  height: 40px;
+  background-color: #474E69; 
+  color: #FFF;
+  border-radius: 3px;
+  background-color:maroon;
+ border:2px solid maroon;
+ color:white;
+  padding:5px;
+ font-size:16px;
+ cursor:pointer;
+ margin:12px 0;
+ margin-left: 150px;
+}
+
+.box
+{
+    width:250px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                color:white;
+}
