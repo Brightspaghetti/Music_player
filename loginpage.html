@@ -7,6 +7,14 @@
         {
             var pas=document.getElementById("pw").value;
             var cpas=document.getElementById("cpw").value;
+             if(pas.length>7)
+            {
+                alert("Password should be only 6 characters");
+            }
+            else
+            {
+                return false;
+            }
             if(pas!=cpas)
             {
                 alert("Passwords don't match");
