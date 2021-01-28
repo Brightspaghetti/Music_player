@@ -31,6 +31,7 @@
         function deactivate()
         {
             document.getElementById("cbx").checked=false;
+            document.getElementById("bt").disabled=true;
         }
         </script>
         <style>
@@ -129,7 +130,7 @@
                     <label>Agree to terms and conditions</label>
                     <input class="check" type="checkbox" id="cbx" name="" onclick="validate();" required>
                 </div>
-                <a href="templateupdate.html"><input class="btn" id="bt" type="button" name="" onmouseover="validate();" value="Create" disabled></a>
+                <a href="templateupdate.html"><input class="btn" id="bt" type="button" name="" value="Create" disabled></a>
             </div>
         </form> 
     </body>
