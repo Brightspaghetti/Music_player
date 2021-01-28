@@ -7,14 +7,11 @@
         {
             var pas=document.getElementById("pw").value;
             var cpas=document.getElementById("cpw").value;
-             if(pas.length>7)
+            if(pas.length>7)
             {
                 alert("Password should be only 6 characters");
             }
-            else
-            {
-                return false;
-            }
+            
             if(pas!=cpas)
             {
                 alert("Passwords don't match");
@@ -31,7 +28,6 @@
         function deactivate()
         {
             document.getElementById("cbx").checked=false;
-            document.getElementById("bt").disabled=true;
         }
         </script>
         <style>
@@ -110,7 +106,7 @@
         
     </head>
     <body>
-        <form action="loginpage1.php" method="post" onSubmit="alert('Thank you!');">
+        <form>
             <div class="login-box" >
                 <h1>Create New</h1>
                 <div class="textbox">
@@ -119,18 +115,17 @@
                 </div>
                 <div class="textbox">
                     <i class="fad fa-lock"></i>
-                    
-                    <input type="password" placeholder="Password" id="pw" name="" value="" onkeypress="validate();" required>
+                    <input type="password" placeholder="Password" id="pw" name="" value="" onkeypress="deactivate();" required>
                 </div>
                 <div class="textbox">
                     <i class="fad fa-lock"></i>
-                    <input type="password" placeholder="Confirm password" id="cpw" name="" value="" onkeypress="validate();"  required>
+                    <input type="password" placeholder="Confirm password" id="cpw" name="" value="" onkeypress="deactivate();"  required>
                 </div></br>
                 <div>
                     <label>Agree to terms and conditions</label>
                     <input class="check" type="checkbox" id="cbx" name="" onclick="validate();" required>
                 </div>
-                <a href="templateupdate.html"><input class="btn" id="bt" type="button" name="" value="Create" disabled></a>
+                <a href="templateupdate.html"><input class="btn" id="bt" type="button" name="" onmouseover="validate();" value="Create" disabled></a>
             </div>
         </form> 
     </body>
