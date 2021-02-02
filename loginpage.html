@@ -111,11 +111,11 @@
                 <h1>Create New</h1>
                 <div class="textbox">
                     <i class="fad fa-user"></i>
-                    <input type="text" placeholder="Username" name="" value="" required>
+                    <input type="text" placeholder="Username" name="user" value="" required>
                 </div>
                 <div class="textbox">
                     <i class="fad fa-lock"></i>
-                    <input type="password" placeholder="Password" id="pw" name="" value="" onkeypress="deactivate();" required>
+                    <input type="password" placeholder="Password" id="pw" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}" value="" onkeypress="deactivate();" required>
                 </div>
                 <div class="textbox">
                     <i class="fad fa-lock"></i>
